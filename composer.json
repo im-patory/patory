@@ -1,0 +1,24 @@
+{
+    "name": "patory/core",
+    "description": "PHP based on Satori Protocol.",
+    "type": "library",
+    "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Patory\\": "src/"
+        },
+        "files": [
+            "src/Api/bootstarp.php",
+            "src/Universal/bootstrap.php",
+            "src/Events/bootstrap.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Lipraty",
+            "email": "i@lonay.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
