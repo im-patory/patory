@@ -9,7 +9,7 @@ declare(strict_types=1);
  **/
 namespace Patory\Events;
 
-class Reaction
+class Reaction extends Basic
 {
     const _root = 'reaction';
     const added = [

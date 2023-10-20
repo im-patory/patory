@@ -9,7 +9,7 @@ declare(strict_types=1);
  **/
 namespace Patory\Events;
 
-class GuildRole
+class GuildRole extends Basic
 {
     const _root = 'guild-role';
     const created = [

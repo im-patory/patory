@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Patory\Events;
 
-class Message
+class Message extends Basic
 {
     const _root = 'message';
     const created = [

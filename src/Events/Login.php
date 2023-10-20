@@ -9,7 +9,7 @@ declare(strict_types=1);
  **/
 namespace Patory\Events;
 
-class Login
+class Login extends Basic
 {
     const _root = 'login';
     const added = [
