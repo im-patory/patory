@@ -14,6 +14,7 @@ class User
 {
     public string $id;
     public ?string $name;
+    public ?string $nick;
     public ?string $avatar;
     public ?bool $is_bot;
 }
