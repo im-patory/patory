@@ -9,7 +9,7 @@ declare(strict_types=1);
  **/
 namespace Patory\Events;
 
-class User
+class User extends Basic
 {
     const _root = 'user';
     const friend_request = [

@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Patory\Events;
 
-class Guild
+class Guild extends Basic
 {
     const _root = 'guild';
     const added = [
