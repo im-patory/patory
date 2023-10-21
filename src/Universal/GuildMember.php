@@ -13,7 +13,7 @@ namespace Patory\Universal;
 class GuildMember
 {
     public ?User $user;
-    public ?string $name;
+    public ?string $nick;
     public ?string $avatar;
     public int $joined_at;
 }
