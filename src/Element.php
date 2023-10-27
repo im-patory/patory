@@ -46,7 +46,7 @@ class Element
      *   - 一般兄弟组合器 `sel1 ~ sel2`
      *   - 紧邻兄弟组合器 `sel1 + sel2`
      *
-     * 如果传入了字符串，则会先使用 h.parse() 进行解析。
+     * 如果传入了字符串，则会先使用 Element::parse() 进行解析。
      */
     public static function select()
     {

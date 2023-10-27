@@ -13,6 +13,6 @@ use Patory;
 
 abstract class Login extends BasicApi
 {
-    const method = 'login';
+    const resource = 'login';
     abstract public function get(): Patory\Universal\Login;
 }

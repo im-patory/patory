@@ -13,7 +13,7 @@ use Patory;
 
 abstract class Message extends BasicApi
 {
-    const method = 'message';
+    const resource = 'message';
     /**
      * @return Patory\Universal\Message[]
      * */

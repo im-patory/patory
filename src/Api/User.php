@@ -13,7 +13,7 @@ use Patory;
 
 abstract class User extends BasicApi
 {
-    const method = 'user';
+    const resource = 'user';
     abstract public function get(string $user_id): Patory\Universal\User;
     abstract public function channel_create(string $user_id): Patory\Universal\Channel;
 }

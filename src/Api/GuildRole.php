@@ -13,7 +13,7 @@ use Patory;
 
 abstract class GuildRole extends BasicApi
 {
-    const method = 'guild.role';
+    const resource = 'guild.role';
     abstract public function create(string $guild_id, Patory\Universal\GuildRole $role): Patory\Universal\GuildRole;
     abstract public function delete(string $guild_id, string $role_id): void;
     abstract public function update(string $guild_id, string $role_id, Patory\Universal\GuildRole $role): void;

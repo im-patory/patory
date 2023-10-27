@@ -30,4 +30,44 @@ The running environment requires PHP 8.1 and above.
 - [ ] Patory\Auth: 简单鉴权工具
 - [ ] Patory\Helper: 其他工具
 
+## Patory\Api
 
+所有 API 派生基类都拥有内部魔术方法，以 `Channel` 基类为例：
+
+- `Channel::path('create')`: 生成 URL Path
+
+### Example
+
+```php
+// 实现 Channel 基类
+class Channel extends Patory\Api\Channel
+{
+    function create(string $channel_id, Patory\Universal\Channel $data) : Patory\Universal\Channel{
+        $url = static::path(__FUNCTION__);
+        //输出: /v1/channel.create
+    }
+}
+```
+
+## Patory\Element
+
+元素内部以 Object 形式流转，通过 toString() 转为标准元素 `<foo></foo>`。
+
+```php
+// 内部
+Element = [
+    'type' => 'at',
+    'attrs' => [
+        'id' => '114514',
+        'name' => 'Tadokoro Koji',
+        'role' => null,
+        'type' => null
+    ]
+];
+```
+
+### APIs
+
+```php
+$at = new Patory\Element();
+```

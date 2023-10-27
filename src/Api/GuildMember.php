@@ -13,7 +13,7 @@ use Patory;
 
 abstract class GuildMember extends BasicApi
 {
-    const method = 'guild.member';
+    const resource = 'guild.member';
     abstract public function get(string $guild_id, string $user_id): Patory\Universal\GuildMember;
     abstract public function list(string $guild_id, string $next): Patory\Universal\DataList;
     abstract public function kick(string $guild_id, string $user_id, ?bool $permanent): void;
