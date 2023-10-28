@@ -23,5 +23,14 @@ class RootElement
     {
         // push element
         $this->children = $children;
+        foreach (static::fieldAttrs as $attr)
+        {
+
+        }
+        return [
+            'type' => static::type,
+            'attrs' => $this->attrs,
+            'children' => $this->children
+        ];
     }
 }
